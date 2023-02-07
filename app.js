@@ -63,3 +63,35 @@ buton.addEventListener("click", () => {
     startGame.style.display = "none";
     guessText.style.visibility = "hidden";
   }
+
+  // tahmin edilen sayı küçükse
+
+  if (+input.value < randomNumber) {
+    guessText.style.visibility = "visible";
+    if (+input.value < 0) {
+      firstNum = 0;
+    } else if (+input.value > firstNum) {
+      firstNum = input.value;
+    }
+    firstNumSpan.innerHTML = firstNum;
+    secondNumSpan.innerHTML = secondNum;
+    result.innerText = "Try a higher number ";
+    input.value = "";
+    input.focus();
+  }
+
+  // tahmin edilen sayı büyükse
+
+  if (+input.value > randomNumber) {
+    guessText.style.visibility = "visible";
+    if (+input.value > 100) {
+      secondNum = 100;
+    } else if (+input.value < secondNum) {
+      secondNum = input.value;
+    }
+    firstNumSpan.innerHTML = firstNum;
+    secondNumSpan.innerHTML = secondNum;
+    result.innerText = "Try a lower number ";
+    input.value = "";
+    input.focus();
+  }
