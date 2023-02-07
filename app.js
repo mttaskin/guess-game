@@ -95,3 +95,23 @@ buton.addEventListener("click", () => {
     input.value = "";
     input.focus();
   }
+
+  // can bitince
+  if (live == 0) {
+    result.innerText = "Try Again!!";
+    imgCon.style.backgroundImage = "url('./assets/minions-taunting.gif')";
+    input.value = "";
+    input.focus();
+    inputCon.style.display = "none";
+    butonCon.style.display = "flex";
+    reStartGame.style.display = "block";
+    startGame.style.display = "none";
+    guessText.style.visibility = "hidden";
+  }
+});
+
+document.addEventListener("keydown", (el) => {
+  if (el.key == "Enter") {
+    buton.click();
+  }
+});
