@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #85ffbd;
+  background-image: linear-gradient(270deg, #85ffbd 0%, #fffb7d 100%);
+  height: 100vh;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1px;
+}
+header {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-con {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.input-con input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  text-align: center;
+}
