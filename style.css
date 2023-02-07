@@ -64,3 +64,33 @@ header {
   font-weight: 600;
   visibility: hidden;
 }
+.btn-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.btn-con button {
+  padding: 8px 12px;
+  margin-left: 16px;
+  font-size: 22px;
+  border: none;
+  background-color: #6439ba;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-con button:hover {
+  background-color: white;
+  color: #6439ba;
+}
+.restart {
+  display: none;
+}
+
+.guess-text {
+  visibility: hidden;
+  height: 60px;
+  font-size: 24px;
+  text-align: center;
+}
